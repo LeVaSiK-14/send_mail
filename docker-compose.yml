@@ -1,0 +1,35 @@
+version: "3"
+
+
+services:
+
+  web:
+    container_name: send_mail_app
+    build:
+      context: ./
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/usr/src/app
+    command: >
+              sh -c "python3 manage.py makemigrations &&
+              python3 manage.py migrate &&
+              python3 manage.py runserver 0.0.0.0:8000"
+
+
+  redis:
+    container_name: send_mail_redis
+    image: redis
+
+
+  celery:
+    build:
+      context: .
+    container_name: celery-worker
+    restart: always
+    command: sh -c "celery -A core worker -l INFO"
+    volumes:
+      - ./:/usr/src/app
+    depends_on:
+      - redis
+      - web
