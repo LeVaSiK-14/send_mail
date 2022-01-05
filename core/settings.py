@@ -132,7 +132,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://127.0.0.1:5500',
     'http://localhost:3000',
     'http://127.0.0.1:3000',
-    'project-send-mail.herokuapp.com',
+    'https://project-send-mail.herokuapp.com',
 ]
 
 # Default primary key field type
