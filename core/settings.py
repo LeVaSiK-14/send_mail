@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#n)924#kxr0oy_s5aso_94d$eh)+gcyw6w5k#p362$o)6a#m^g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['project-send-mail.herokuapp.com',]
 
 
 # Application definition
@@ -131,6 +131,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://127.0.0.1:5500',
     'http://localhost:3000',
     'http://127.0.0.1:3000',
+    'project-send-mail.herokuapp.com',
 ]
 
 # Default primary key field type
