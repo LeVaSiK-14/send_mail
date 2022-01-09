@@ -1,0 +1,486 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZettaLab</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+<body>
+    <section id="sideBare">
+        <div class="logoContainer">
+            <img src="{% static 'images/Subtract.png' %}" alt="logo" />
+        </div>
+        <div class="navContainer">
+            <nav class="nav">
+                <a id="homeLink" class="sideBare_link" href="#home">
+                    Home
+                </a>
+                <a id="aboutLink" class="sideBare_link" href="#about">
+                    About
+                </a>
+                <a id="valuesLink" class="sideBare_link" href="#values">
+                    Values
+                </a>
+                <a id="roadmapLink" class="sideBare_link" href="#project">
+                    Roadmap
+                </a>
+                <a id="techLink" class="sideBare_link" href="#tech">
+                    Technologies
+                </a>
+                <a id="servicesLink" class="sideBare_link" href="#service">
+                    Services
+                </a>
+                <a id="positionsLink" class="sideBare_link" href="#portfolio">
+                    Positions
+                </a>
+                <a id="contactLink" class="sideBare_link" href="#contact">
+                    Contact
+                </a>
+            </nav>
+        </div>
+        <div class="links">
+            <a href="">
+                <img
+                    class="sideBare_contacts"
+                    src="{% static 'images/TGR.png' %}"
+                    alt="telegram"
+                />
+            </a>
+
+            <a href="">
+                <img
+                    class="sideBare_contacts"
+                    src="{% static 'images/WAA.png' %}"
+                    alt="whatsApp"
+                />
+            </a>
+
+            <a href="">
+                <img
+                    class="sideBare_contacts"
+                    src="{% static 'images/INN.png' %}"
+                    alt="FaceBook"
+                />
+            </a>
+        </div>
+    </section>
+    <button class="burger">
+        <i class="fas fa-bars"></i>
+    </button>
+    <section id="content">
+        <div class="home" id="home">
+            <h1>ZettaLab</h1 >
+            <p>Improve. Connect. Create</p>
+            <a href="#">Get started</a>
+        </div>
+        <div class="about" id="about" data-about="about">
+            <h1 class="article" id="about_1" data-aos="fade-right">
+                About us
+            </h1>
+            <div class="about_block">
+                <div class="about_text">
+                    <div class="about_p" id="about_2" data-aos="fade-right">
+                    We are a team of creative developers, data analysts, designers who care about your growth in the interesting world of programming. We are ready to support you and provide you with practice if you are not yet confident in your abilities after IT courses or self-study.
+                    </div>
+                    <div class="about_p" id="about_txt" data-aos="fade-right">
+                    We provide real foreign orders, an experienced mentor and a staffed team for the project, and if you quickly achieve a result and pass an interview, we will help you find a job in the companies of our foreign partners
+                    </div>
+                </div>
+
+                <div data-aos="fade-up">
+                    <img id="about_3" src="{% static 'images/aboutttt.png' %}" alt="image"/>
+                </div>
+            </div>
+        </div>
+        <div class="values" id="values">
+            <h1 class="article" data-aos="flip-left">Our values</h1>
+
+            <div class="container">
+                <div class="item" id="values_1" data-aos="flip-left">
+                    <img  src="{% static 'images/qwe2.png' %}" alt="img1" />
+                    <h2>Growth</h2>
+                    <p>We care about your growth</p>
+                </div>
+
+                <div class="item" id="values_2" data-aos="flip-left">
+                    <img src="{% static 'images/qwe3.png' %}" alt="img1"/>
+                    <h2>Full reporting</h2>
+                    <p>Full and clear development</p>
+                </div>
+
+                <div class="item" id="values_3" data-aos="flip-left">
+                    <img src="{% static 'images/qwe1.png' %}" alt="img1" />
+                    <h2>Startups</h2>
+                    <p>
+                    You can participate in the development of cool startups
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project" id="project">
+            <h1 class="animateOpacity article" data-aos="flip-up">
+                Roadmap
+            </h1>
+            <div class="wrapper">
+                <div class="content">
+                    <div class="item" id="project_1" data-aos="fade-right">
+                        <h2>Contact</h2>
+                        <p>
+                        Submit your request to us.
+                        </p>
+                    </div>
+
+                    <div class="item" id="project_2" data-aos="fade-right">
+                        <h2>Interview</h2>
+                        <p>
+                        We will contact you to clarify your skills
+                        </p>
+                    </div>
+
+                    <div class="item" id="project_3" data-aos="fade-right">
+                        <h2>Proposal</h2>
+                        <p>
+                        We will provide you an experienced mentor, office and team
+                        </p>
+                    </div>
+
+                    <div class="item" id="project_4" data-aos="fade-right">
+                        <h2>Start</h2>
+                        <p>
+                        You need to pay 8500 som and sign formal documents and start your journey.
+                        </p>
+                    </div>
+                </div>
+                <img
+                    src="{% static 'images/NewNote.png' %}"
+                    alt="img"
+                    id="project_5"
+                />
+            </div>
+        </div>
+        <div class="technoleges" id="tech">
+            <h1 class="technoleges_title article" data-aos="flip-up">
+            Tech stack
+            </h1>
+
+            <div class="deskTech">
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/python.png' %}" alt="img" />
+                    <p class="tecnology_p"> Python </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/angular.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Angular </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/django.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Django </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/figma.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Figma </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/firebase.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Firebase </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/next-js.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Next </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/gitlab.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Gitlab </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/docker.png' %}" alt="img" />
+                    <p class="tecnology_p"> Docker </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/javascript.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Javascript </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/jira.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Jira </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/kotlin.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Kotlin </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/mongodb.svg' %}" alt="img" />
+                    <p class="tecnology_p"> MongoDB </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/mysql.svg' %}" alt="img" />
+                    <p class="tecnology_p"> MySQL </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/nodejs.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Node </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/postgresql.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Postgresql </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/react.svg' %}" alt="img" />
+                    <p class="tecnology_p"> React </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/redux.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Redux </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/sass.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Sass </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/swift.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Swift </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/typescript.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Typescript </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/webpack.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Webpack </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/vue.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Vue </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/nestjs.svg' %}" alt="img" />
+                    <p class="tecnology_p"> NestJS </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/google-cloud.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Google Cloud </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/graphql.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Graphql </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/babel.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Babel </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/aws.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Aws </p>
+                </div>
+                <div class="technology_text" data-aos="flip-down">
+                    <img class="tecnology_image" src="{% static 'images/circleci.svg' %}" alt="img" />
+                    <p class="tecnology_p"> Circleci </p>
+                </div>
+            </div>
+        </div>
+        <div class="service" id="service">
+            <h1
+                class="service_title article"
+                data-aos="flip-up"
+            >
+                Our services
+            </h1>
+
+            <div class="service_blocks">
+                <div class="block_left serviceBlockData" data-aos="fade-up">
+                    <h2>Code review</h2>
+                    <img src="{% static 'images/^.png' %}" alt="" style="width: 125px; margin-top: -50px; margin-left: 200px;"/>
+                    <p>A mentor will tell you how to do magic correctly</p>
+                    
+                </div>
+                <div class="block_right serviceBlockData" data-aos="fade-up">
+                    <h2>Full development proccess</h2>
+                    <img src="{% static 'images/~.png' %}" alt="" style="width: 125px; margin-top: -10px; margin-left: 200px;"/>
+                    <p>QA, DevOps, Backend and Frontend, Project manager and Tech lead</p>
+                    
+                </div>
+                <div class="block_left serviceBlockData" data-aos="fade-up">
+                    <h2>Monthly interview</h2>
+                    <img src="{% static 'images/+.png' %}" alt="" style="width: 125px; margin-top: -45px; margin-left: 195px;"/>
+                    <p>Improve your skills on interviews</p>
+                    
+                </div>
+                <div class="block_right serviceBlockData" data-aos="fade-up">
+                    <h2>UI & UX design</h2>
+                    <img src="{% static 'images/_.png' %}" alt="" style="width: 110px; margin-top: -90px; margin-left: 205px;"/>
+                    <p>Creative design for any product</p>
+                    
+                </div>
+                <div class="block_left serviceBlockData" data-aos="fade-up">
+                    <h2>Participate in startups</h2>
+                    <img src="{% static 'images/reshotka.png' %}" alt="" style="width: 200px; margin-top: -45px; margin-left: 180px;"/>
+                    <p>Be a part of International startups</p>
+                    
+                </div>
+                <div class="block_right serviceBlockData" data-aos="fade-up">
+                    <h2>Grow with professionals</h2>
+                    <img src="{% static 'images/_1.png' %}" alt="" style="width: 100px; margin-top: -45px; margin-left: 200px;"/>
+                    <p>Grow with us</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="portfolio" id="portfolio">
+            <h1 class="article" data-aos="flip-up">Open positions</h1>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/sliderImg1.png' %}" alt="sliderImage">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/sliderImg2.png' %}" alt="sliderImage">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/sliderImg1.png' %}" alt="sliderImage">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/sliderImg2.png' %}" alt="sliderImage">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/sliderImg1.png' %}" alt="sliderImage">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/sliderImg2.png' %}" alt="sliderImage">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/sliderImg1.png' %}" alt="sliderImage">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{% static 'images/sliderImg2.png' %}" alt="sliderImage">
+                    </div>
+                </div>
+            </div>
+            <div class="control-buttons">
+                <div class="swiper-button-prev">
+                    <img src="{% static 'images/r2.png' %}" alt="swiper-button-prev">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="{% static 'images/r1.png' %}" alt="swiper-button-next">
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <h1 class="article" data-aos="flip-up">Contact us</h1>
+
+            <div class="container">
+                <div class="contact-block animateOpacity">
+                    <div class="item" data-aos="fade-right">
+                        <img src="{% static 'images/Locaa.png' %}" alt="img1" width="35" height="45" />
+                        <div class="localWrapper">
+                            <h2>Address</h2>
+                            <p>Logvinenko st. 55, 1st office</p>
+                        </div>
+                    </div>
+                    <div class="item" data-aos="fade-right">
+                        <img src="{% static 'images/Malee.png' %}" alt="img1" width="45" height="35" />
+                        <div class="localWrapper">
+                            <h2>Email us</h2>
+                            <p>hello@zettasoft.io</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-block animateOpacity">
+                    <div class="item" data-aos="fade-right">
+                        <img src="{% static 'images/Phnee.png' %}" alt="img1" width="45" height="45" />
+                        <div class="localWrapper">
+                            <h2>Call us</h2>
+                            <p>+996 774 15 65 33</p>
+                            <p>+996 559 60 16 09</p>
+                        </div>
+                    </div>
+
+                    <div class="item" data-aos="fade-right">
+                        <img src="{% static 'images/Clcc.png' %}" alt="img1" width="45" height="45" />
+                        <div class="localWrapper">
+                            <h2>Open hours</h2>
+                            <p>Monday-Friday</p>
+                            <p>10:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form  animateOpacity">
+                <form action="{%url 'form'%}" method='post'>
+                    
+                    <input data-aos="fade-up" name='name' type="text" placeholder="Your name">
+                    <input data-aos="fade-up" name='email' type="text" placeholder="Email">
+                    <input data-aos="fade-up" name='position' type="text" placeholder="Position">
+                    <input data-aos="fade-up" name='message' type="text" placeholder="Message">
+                    <button type="submit" data-aos="fade-up" class="formBtn">
+                        Send message
+                    </button>
+                    {%csrf_token%}
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerImg">
+                <img src="{% static 'images/Subtract.png' %}" alt="" />
+            </div>
+            <div class="footerTitle">ZettaLab.io</div>
+
+            <div class="footerIcons">
+                <a href="">
+                    <img
+                        class="sideBare_contacts"
+                        src="{% static 'images/TGR.png' %}"
+                        alt="telegram"
+                    />
+                </a>
+
+                <a href="">
+                    <img
+                        class="sideBare_contacts"
+                        src="{% static 'images/WAA.png' %}"
+                        alt="whatsApp"
+                    />
+                </a>
+
+                <a href="">
+                    <img
+                        class="sideBare_contacts"
+                        src="{% static 'images/INN.png' %}"
+                        alt="FaceBook"
+                    />
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="scripts/script.js"></script>
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+        });
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            mirror: true
+        });
+    </script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/aacff25297.js" crossorigin="anonymous"></script>
+</body>
+</html>
